@@ -318,10 +318,10 @@ void loop() {
       direction = -direction;
     }
     lastAnimationTime = millis();
-    Serial.print("Temperature: ");
-    Serial.print(temperature);
-    Serial.print(" °C\t");
-    Serial.println(currentTime);
+    //Serial.print("Temperature: ");
+    //Serial.print(temperature);
+    //Serial.print(" °C\t");
+    //Serial.println(currentTime);
   }
 
   //เพิ่มเลือด กินข้าว
