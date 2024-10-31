@@ -70,11 +70,6 @@ ArduinoChi จะมีชีวิตอยู่ได้ท่ามกลา
 * #### Breadboard
 > ![Pic_Board.PNG](/Picture/Pic_Board.PNG "Beardboard")
 
-## Source Code
-```c++
-#include <stdio.h>
-```
-
 ## Website ➡️
 [Link](https://cdn.discordapp.com/attachments/507054624834846730/1297882417327112262/IMG_1177.png?ex=6722bf71&is=67216df1&hm=b2551a39af5cd422898d37bfcb4b70a4f0e54e5b67ede9481c33a7f775dbf3c0&)
 
@@ -94,3 +89,8 @@ ArduinoChi จะมีชีวิตอยู่ได้ท่ามกลา
 | 66070054 | นายฐีตพรรธ สังหิตกุล |
 
 โปรเจคนี้เป็นส่วนหนึ่งในรายวิชา PHYSICAL COMPUTING 06016409 ภาคเรียนที่ 1 ปีการศึกษา 2567 ของคณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+
+## Source Code
+```c++
+#include <stdio.h>
+```
