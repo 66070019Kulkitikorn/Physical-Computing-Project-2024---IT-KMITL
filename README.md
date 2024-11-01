@@ -71,7 +71,8 @@ ArduinoChi จะมีชีวิตอยู่ได้ท่ามกลา
 > ![Pic_Board.PNG](/Picture/Pic_Board.PNG "Beardboard")
 
 ## Website ➡️
-[Link](https://cdn.discordapp.com/attachments/507054624834846730/1297882417327112262/IMG_1177.png?ex=6722bf71&is=67216df1&hm=b2551a39af5cd422898d37bfcb4b70a4f0e54e5b67ede9481c33a7f775dbf3c0&)
+![Website_Pic.PNG](/Picture/Website_Pic.PNG "Website_Preview")<br>
+[Link](https://66070019kulkitikorn.github.io/Physical-Computing-Project-2024---IT-KMITL)
 
 ## Clip VDO ▶️
 <video width="630" height="300" src="/Pic/Placeholder"></video>
