@@ -1,0 +1,337 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: 'Noto Sans Thai';
+}
+
+.navbar {
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #008844;
+}
+
+/* Hero Section */
+.mainn {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(183, 255, 196, 0.5), rgba(0, 0, 0, 1)), url('img/full.jpg');
+    background-attachment: fixed;
+    background-size:contain;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    padding: 2rem;
+}
+
+.mainn-content {
+    max-width: 800px;
+}
+
+.mainn h1 {
+    font-size: 10rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    -webkit-text-stroke-color: rgb(0, 97, 18);
+    -webkit-text-stroke-width: 2px;
+}
+
+.mainn p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    /*margin-bottom: 2rem;*/
+    opacity: 0.9;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.2px;
+}
+
+/*.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}*/
+
+/* .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+} */
+
+.image_1 {
+    width: 100%;
+    float: right;
+    padding: 20px;
+
+}
+
+.info {
+    height: 380vh;
+    padding: 5rem 2rem;
+    background: rgb(236, 255, 239);
+}
+
+.info-content {
+    max-width: 800px;
+}
+
+.info h3 {
+    font-size: 3rem;
+    
+    margin-left: 10rem;
+    /*margin-bottom: 2rem;*/
+    opacity: 0.9;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.2px;
+}
+
+.info p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    line-height: 1.6;
+}
+
+/* .info p1 {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    margin-right: 1rem;
+    line-height: 1.6;
+} */
+
+.info img {
+    border-radius: 25px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    /* width: 40%;
+    float: left;
+    margin-right: 5rem; */
+    /*padding: 20px;*/
+
+}
+/* .info {
+    height: 80vh;
+    padding: 5rem 2rem;
+    background: rgb(236, 255, 239);
+}
+
+.info-content {
+    max-width: 800px;
+}*/
+
+.info-grid {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to new lines */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 250px;
+}
+
+.info-card {
+    background: #82ffbe;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+}
+
+.info-icon {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.info-card h1 {
+    /*margin: 1rem 0;*/
+    color: #333;
+}
+
+.info-card p {
+    font-size: 80%;
+    width: 100%;
+    margin: 1rem 0;
+    color: #393939;
+}
+
+.link {
+    height: 150vh;
+    background: rgb(81, 131, 89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.link-content {
+    max-width: 800px;
+}
+
+.link h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    color: azure;
+    -webkit-text-stroke-color: rgb(0, 97, 18);
+    -webkit-text-stroke-width: 2px;
+}
+
+.link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 250px;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.link-card {
+    background: #ffe3e3;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 200px;
+}
+
+.link-icon {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.link-card h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #ffffff;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.link-card p {
+    font-size: 80%;
+    width: 100%;
+    margin: 1rem 0;
+    color: #393939;
+}
+
+.link-picbox{
+    width: 800px;
+    height: 500px;
+    float:none;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link-picbox img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.aboutus {
+    height: 120vh;
+    background: rgb(49, 109, 59);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutus-content {
+    max-width: 800px;
+}
+
+.aboutus h1 {
+    margin-top: 3rem;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: azure;
+    -webkit-text-stroke-color: rgb(0, 97, 18);
+    -webkit-text-stroke-width: 2px;
+}
+
+.aboutus-grid {
+    display: flex;
+    flex-direction: column; /* เรียงการ์ดในแนวตั้ง */
+    gap: 1rem; /* เพิ่มช่องว่างระหว่างการ์ด */
+    padding: 2rem;
+}
+
+.aboutus-card {
+    background: #ffe3e3;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s;
+    width: 100%; /* ให้การ์ดเต็มความกว้างของคอนเทนเนอร์ */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+}
+
+.aboutus-icon {
+    width: 150px; /* กำหนดขนาดไอคอนให้เล็กลง */
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.aboutus-card h1, .aboutus-card p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0px;
+}
