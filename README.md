@@ -77,8 +77,8 @@ ArduinoChi จะมีชีวิตอยู่ได้ท่ามกลา
 [Link](https://66070019kulkitikorn.github.io/Physical-Computing-Project-2024---IT-KMITL)
 
 ## Clip VDO ▶️
-<video width="630" height="300" src="/Pic/Placeholder"></video>
-[Link](https://youtu.be/gjh_wjSpw8g "Project Demo")
+<video width="640" height="360" src="https://github.com/66070019Kulkitikorn/Physical-Computing-Project-2024---IT-KMITL/blob/main/Picture/ArduinoChi_Video.mp4"></video>
+[Link](https://youtu.be/zMv8TwEkpwY "Project Demo")
 
 ## A1 Poster 📋
 ![ArduinoChi_Poster.png](/Picture/ArduinoChi_Poster.png "A1_Poster")<br>
