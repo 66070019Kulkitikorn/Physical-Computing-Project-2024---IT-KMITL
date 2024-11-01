@@ -78,8 +78,8 @@ ArduinoChi จะมีชีวิตอยู่ได้ท่ามกลา
 [Link](https://youtu.be/gjh_wjSpw8g "Project Demo")
 
 ## A1 Poster 📋
-![A1_Poster.png](/Picture/Pic_A1_Poster.jpg "A1_Poster")<br>
-[Link](/Picture/A1_Poster.pdf "Poster")
+![ArduinoChi_Poster.png](/ArduinoChi_Poster.png "A1_Poster")<br>
+[Link](/ArduinoChi_Poster.pdf "Poster")
 
 ## สมาชิกกลุ่ม (Group Members) 👦👦👦👧
 | รหัสประจำตัว | รายชื่อสมาชิก | หน้าที่ |
