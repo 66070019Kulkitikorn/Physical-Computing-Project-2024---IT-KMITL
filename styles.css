@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +9,13 @@
 body {
     background: #f5f5f5;
     font-family: 'Noto Sans Thai';
+    overflow-x: hidden;
 }
+
 
 .navbar {
     background: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
@@ -26,7 +28,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -34,142 +37,83 @@ body {
     color: #666;
     font-weight: 500;
     transition: color 0.3s;
+    padding: 0.5rem;
 }
 
 .nav-links a:hover {
     color: #008844;
 }
 
-/* Hero Section */
 .mainn {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(183, 255, 196, 0.5), rgba(0, 0, 0, 1)), url('img/full.jpg');
-    background-attachment: fixed;
-    background-size:contain;
-    background-position: center center;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .mainn-content {
+    width: 100%;
     max-width: 800px;
+    padding: 1rem;
 }
 
 .mainn h1 {
-    font-size: 10rem;
+    font-size: clamp(3rem, 10vw, 10rem);
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    -webkit-text-stroke-color: rgb(0, 97, 18);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke: 2px rgb(0, 97, 18);
 }
 
 .mainn p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     margin-top: 2rem;
-    /*margin-bottom: 2rem;*/
-    opacity: 0.9;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: 0.2px;
-}
-
-/*.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: white;
-    color: #007bff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s;
-}*/
-
-/* .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-} */
-
-.image_1 {
-    width: 100%;
-    float: right;
-    padding: 20px;
-
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
 }
 
 .info {
-    height: 380vh;
-    padding: 5rem 2rem;
+    min-height: 380vh;
+    padding: 3rem 1rem;
     background: rgb(236, 255, 239);
 }
 
-.info-content {
-    max-width: 800px;
-}
-
 .info h3 {
-    font-size: 3rem;
-    
-    margin-left: 10rem;
-    /*margin-bottom: 2rem;*/
-    opacity: 0.9;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: 0.2px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
 }
 
 .info p {
     color: #666;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: 2rem auto;
+    max-width: 90%;
     line-height: 1.6;
 }
-
-/* .info p1 {
-    color: #666;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 10rem;
-    margin-right: 1rem;
-    line-height: 1.6;
-} */
 
 .info img {
     border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-    /* width: 40%;
-    float: left;
-    margin-right: 5rem; */
-    /*padding: 20px;*/
-
-}
-/* .info {
-    height: 80vh;
-    padding: 5rem 2rem;
-    background: rgb(236, 255, 239);
 }
 
-.info-content {
-    max-width: 800px;
-}*/
-
+/* Info Grid */
 .info-grid {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to new lines */
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 2rem;
-    height: 250px;
+    margin: 0 auto;
+    max-width: auto;
 }
 
 .info-card {
@@ -177,61 +121,65 @@ body {
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s;
-    width: 200px;
+    transition: transform 0.3s, height 0.3s;
+    height: fit-content;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info-icon {
-    width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.info-icon img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s;
 }
 
 .info-card h1 {
-    /*margin: 1rem 0;*/
-    color: #333;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 0;
+    padding: 0.5rem;
 }
 
-.info-card p {
-    font-size: 80%;
-    width: 100%;
-    margin: 1rem 0;
-    color: #393939;
-}
-
+/* Link Section */
 .link {
-    height: 150vh;
+    padding: 3rem 1rem;
     background: rgb(81, 131, 89);
+    min-height: 50vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .link-content {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .link h1 {
-    font-size: 5rem;
-    line-height: 1.2;
+    font-size: clamp(2.5rem, 6vw, 4rem);
     color: azure;
-    -webkit-text-stroke-color: rgb(0, 97, 18);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke: 2px rgb(0, 97, 18);
+    text-align: center;
 }
 
 .link-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    height: 250px;
-}
-
-.link-card:hover {
-    transform: translateY(-5px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
 }
 
 .link-card {
@@ -240,98 +188,158 @@ body {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
-    width: 200px;
-}
-
-.link-icon {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
-.link-card h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: #ffffff;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: 0.5px;
+.link-card:hover {
+    transform: translateY(-5px);
 }
 
-.link-card p {
-    font-size: 80%;
+.link-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+}
+
+.link-icon img {
     width: 100%;
-    margin: 1rem 0;
-    color: #393939;
+    height: 100%;
+    object-fit: contain;
 }
 
-.link-picbox{
-    width: 800px;
-    height: 500px;
-    float:none;
+.link-card h1 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin: 0.5rem 0;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+.link-picbox {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 2rem auto;
     overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 10px;
-    margin: 1rem;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .link-picbox img {
     width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
+/* About Us Section */
 .aboutus {
-    height: 120vh;
+    padding: 3rem 1rem;
     background: rgb(49, 109, 59);
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutus-content {
+    width: 100%;
     max-width: 800px;
 }
 
 .aboutus h1 {
-    margin-top: 3rem;
-    font-size: 5rem;
-    line-height: 1.2;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     color: azure;
-    -webkit-text-stroke-color: rgb(0, 97, 18);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke: 1px rgb(0, 97, 18);
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .aboutus-grid {
     display: flex;
-    flex-direction: column; /* เรียงการ์ดในแนวตั้ง */
-    gap: 1rem; /* เพิ่มช่องว่างระหว่างการ์ด */
-    padding: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .aboutus-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     background: #ffe3e3;
     padding: 1rem;
     border-radius: 10px;
-    text-align: left;
-    transition: transform 0.3s;
-    width: 100%; /* ให้การ์ดเต็มความกว้างของคอนเทนเนอร์ */
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+    width: 100%;
 }
 
 .aboutus-icon {
-    width: 150px; /* กำหนดขนาดไอคอนให้เล็กลง */
+    width: 150px;
     height: 150px;
     flex-shrink: 0;
 }
 
-.aboutus-card h1, .aboutus-card p {
-    font-size: 1.5rem;
+.aboutus-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.aboutus-card h1 {
+    font-size: clamp(1.5rem, 2.5vw, 1.2rem);
     margin: 0;
+    text-align: left;
+    -webkit-text-stroke: 0;
     color: #ffffff;
-    -webkit-text-stroke-width: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .link-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .link-picbox {
+        height: 300px;
+    }
+    
+    .aboutus-card {
+        padding: 0.8rem;
+        gap: 1rem;
+    }
+    
+    .aboutus-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .link-card {
+        max-width: 160px;
+    }
+    
+    .link-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .aboutus-card {
+        flex-direction: row;
+        text-align: left;
+    }
 }
